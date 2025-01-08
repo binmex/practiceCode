@@ -8,3 +8,12 @@
  */
 
 //"racecar"
+
+const palindrome = (str)=>{
+    let cleanStr = str.replace(/[^a-zA-Z]/g, "").toLowerCase();
+    console.log(cleanStr.split("").reverse().join(""));
+    let reversedStr = cleanStr.split("").reverse().join("");
+    return cleanStr === reversedStr;
+}
+
+console.log(palindrome("Anne, I vote more cars race Rome-to-Vienna")); //true

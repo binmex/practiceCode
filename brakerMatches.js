@@ -34,4 +34,4 @@ function BracketMatcher(str) {
 }
 
 // keep this function call here
-console.log(BracketMatcher(readline()));
+console.log(BracketMatcher("(hello (world))"));
